@@ -3,7 +3,7 @@ from pydantic import BaseModel, ConfigDict
 
 class STaskAdd(BaseModel):
     name: str
-    description: Optional[str]
+    description: Optional[str] = None
 
 class STask(STaskAdd):
     id: int
